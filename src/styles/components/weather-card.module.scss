@@ -1,3 +1,5 @@
+@import "../variables";
+
 .weatherCard {
   background-color: blue;
   cursor: pointer;
@@ -8,16 +10,16 @@
 }
 
 .weatherDate {
-  font-size: 18px;
+  font-size: $card-time-date;
   font-weight: 500;
-  margin-bottom: 3px;
-  padding-left: 18px;
+  margin-bottom: $half-spacing;
+  padding-left: $base-spacing;
 }
 
 .weatherTemp {
-  font-size: 38px;
-  font-weight: 600;
-  padding-left: 18px;
+  font-size: $big-card-temp;
+  font-weight: $bold-font-weight;
+  padding-left: $base-spacing;
 }
 
 .weatherIcon {
@@ -26,6 +28,6 @@
 }
 
 .weatherDescription {
-  font-size: 24px;
-  padding-left: 18px;
+  font-size: $card-temp-description;
+  padding-left: $base-spacing;
 }

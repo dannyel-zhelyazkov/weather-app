@@ -5,36 +5,33 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
 
-  .header {
-    font-size: $h1;
-    margin-bottom: calc($base-spacing * 3);
-    text-align: center;
+.header {
+  font-size: $h1;
+  margin-bottom: calc($base-spacing * 3);
+  text-align: center;
+}
+
+.weathersContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: calc($half-spacing * 1.5);
+
+  & > div {
+    align-self: center;
+    margin-bottom: $double-spacing;
+    margin-right: $double-spacing;
   }
 
-  .weathersContainer {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: calc($half-spacing * 1.5);
+  @media (max-width: $tablet) {
+    flex-direction: column;
 
     & > div {
-      align-self: center;
-      margin-bottom: $double-spacing;
-
-      &:not(:last-child) {
-        margin-right: $double-spacing;
-      }
-    }
-
-    @media (max-width: $tablet) {
-      flex-direction: column;
-
-      & > div {
-        margin-right: 0;
-      }
+      margin-right: 0;
     }
   }
 }

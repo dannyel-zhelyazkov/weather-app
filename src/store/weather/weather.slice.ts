@@ -76,9 +76,9 @@ export const weatherSlice = createSlice({
 });
 
 export const fetchWeather = () => (dispatch: AppDispatch) => {
+  dispatch(setIsLoading(true));
   navigator.geolocation.getCurrentPosition(async (position) => {
     try {
-      dispatch(setIsLoading(true));
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
 
@@ -98,9 +98,9 @@ export const fetchWeather = () => (dispatch: AppDispatch) => {
 };
 
 export const fetchWeatherAndForecast = () => (dispatch: AppDispatch) => {
+  dispatch(setIsLoading(true));
   navigator.geolocation.getCurrentPosition(async (position) => {
     try {
-      dispatch(setIsLoading(true));
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
 
