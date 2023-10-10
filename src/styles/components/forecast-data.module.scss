@@ -1,0 +1,24 @@
+@import "../variables";
+
+.forecastDataContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: $base-spacing;
+
+  & > div {
+    align-self: center;
+    margin-right: $double-spacing;
+    margin-bottom: $double-spacing;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+
+    & > div {
+      margin-right: 0;
+    }
+  }
+}

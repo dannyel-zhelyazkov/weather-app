@@ -1,0 +1,27 @@
+@import "../variables";
+
+.miniWeatherCard {
+  background-color: $secondary-color;
+  width: 100px;
+  height: 150px;
+  color: black;
+  border-radius: 5%;
+}
+
+.weatherTime {
+  font-size: $card-time-date;
+  font-weight: $medium-font-weight;
+  margin-bottom: $base-spacing;
+  padding-left: $base-spacing;
+}
+
+.weatherTemp {
+  font-size: $card-temp;
+  font-weight: $bold-font-weight;
+  padding-left: $base-spacing;
+}
+
+.weatherIcon {
+  width: 50px;
+  height: 50px;
+}

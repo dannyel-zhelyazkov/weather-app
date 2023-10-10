@@ -1,0 +1,32 @@
+@import "../variables";
+
+.title {
+  font-size: $h2;
+  margin-bottom: $double-spacing;
+}
+
+.weather {
+  margin-bottom: $double-spacing;
+}
+
+.loadingWeatherSkeleton {
+  width: 250px;
+  height: 250px;
+  margin-bottom: $double-spacing;
+}
+
+.loadingForecastSkeleton {
+  width: 100px;
+  height: 150px;
+
+  &:not(:last-child) {
+    margin-right: $double-spacing;
+  }
+}
+
+.loadingForecastContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+

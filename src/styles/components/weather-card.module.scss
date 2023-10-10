@@ -1,0 +1,31 @@
+.weatherCard {
+  background-color: blue;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  color: white;
+  border-radius: 5%;
+}
+
+.weatherDate {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  padding-left: 18px;
+}
+
+.weatherTemp {
+  font-size: 38px;
+  font-weight: 600;
+  padding-left: 18px;
+}
+
+.weatherIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.weatherDescription {
+  font-size: 24px;
+  padding-left: 18px;
+}

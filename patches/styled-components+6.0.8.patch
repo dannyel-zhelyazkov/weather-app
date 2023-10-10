@@ -1,0 +1,13 @@
+diff --git a/node_modules/styled-components/package.json b/node_modules/styled-components/package.json
+index 302cc80..ffdaf1c 100644
+--- a/node_modules/styled-components/package.json
++++ b/node_modules/styled-components/package.json
+@@ -4,7 +4,7 @@
+   "description": "CSS for the <Component> Age. Style components your way with speed, strong typing, and flexibility.",
+   "types": "dist/index.d.ts",
+   "main": "dist/styled-components.cjs.js",
+-  "module": "./dist/styled-components.esm.js",
++  "module": "./dist/styled-components.cjs.js",
+   "react-native": "native/dist/styled-components.native.cjs.js",
+   "browser": {
+     "./dist/styled-components.esm.js": "./dist/styled-components.browser.esm.js",
